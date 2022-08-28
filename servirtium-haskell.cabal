@@ -36,7 +36,10 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.11 && <10
+    , bytestring >=0.11.3.1
     , rio >=0.1.12.0
+    , tagsoup >=0.5.3.3
+    , wreq >=0.5.3.3
   default-language: Haskell2010
 
 executable servirtium-haskell-exe
@@ -48,9 +51,12 @@ executable servirtium-haskell-exe
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.11 && <10
+    , bytestring >=0.11.3.1
     , optparse-simple
     , rio >=0.1.12.0
     , servirtium-haskell
+    , tagsoup >=0.5.3.3
+    , wreq >=0.5.3.3
   default-language: Haskell2010
 
 test-suite servirtium-haskell-test
@@ -64,7 +70,10 @@ test-suite servirtium-haskell-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.11 && <10
+    , bytestring >=0.11.3.1
     , hspec
     , rio >=0.1.12.0
     , servirtium-haskell
+    , tagsoup >=0.5.3.3
+    , wreq >=0.5.3.3
   default-language: Haskell2010
