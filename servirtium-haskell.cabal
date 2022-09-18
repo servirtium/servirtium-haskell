@@ -27,6 +27,7 @@ library
   exposed-modules:
       Import
       Run
+      Test
       Types
       Util
   other-modules:
@@ -37,6 +38,7 @@ library
   build-depends:
       base >=4.11 && <10
     , bytestring >=0.11.3.1
+    , lens >=5.0.1
     , rio >=0.1.12.0
     , tagsoup >=0.5.3.3
     , wreq >=0.5.3.3
@@ -52,6 +54,7 @@ executable servirtium-haskell-exe
   build-depends:
       base >=4.11 && <10
     , bytestring >=0.11.3.1
+    , lens >=5.0.1
     , optparse-simple
     , rio >=0.1.12.0
     , servirtium-haskell
@@ -72,6 +75,7 @@ test-suite servirtium-haskell-test
       base >=4.11 && <10
     , bytestring >=0.11.3.1
     , hspec
+    , lens >=5.0.1
     , rio >=0.1.12.0
     , servirtium-haskell
     , tagsoup >=0.5.3.3
